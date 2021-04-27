@@ -131,6 +131,9 @@ ul {
 }
 
 #recipe {
+  padding: 0 2rem;
+}
+#recipe .panel {
   background-color: #fff;
   box-shadow: 2px 2px 6px 2px #999;
   height: 60vh;
@@ -150,6 +153,7 @@ ul {
 #navbar {
   background-color: #333;
   color: #fff;
+  padding-top: 2rem;
   width: 100%;
 }
 #navbar ul {
@@ -166,7 +170,6 @@ ul {
   border-radius: 5px;
   padding: 1rem 2rem;
 }
-#navbar .current,
 #navbar li:hover a {
   background-color: #fff;
   color: #ec1a1a;
@@ -174,23 +177,28 @@ ul {
 
 #recipe {
   display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
 }
 #recipe .panel {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: 100%;
 }
 #recipe .panel img {
   flex: 1;
   max-height: 100%;
   object-fit: contain;
-  width: auto;
+  position: relative;
+  max-width: auto;
 }
 #recipe .panel .description {
   flex: 1;
-  height: auto;
-  margin: auto;
-  max-width: 100%;
+  max-height: 100%;
+  margin: auto auto auto -2rem;
+  padding: 0 1.5rem;
+  max-width: auto;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,23 +1,28 @@
 #recipe {
   display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
 
   & .panel {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 100%;
 
     & img {
       flex: 1;
       max-height: 100%;
       object-fit: contain;
-      width: auto;
+      position: relative;
+      max-width: auto;
     }
 
     & .description {
       flex: 1;
-      height: auto;
-      margin: auto;
-      max-width: 100%;
+      max-height: 100%;
+      margin: auto auto auto -2rem;
+      padding: 0 1.5rem;
+      max-width: auto;
     }
   }
 
