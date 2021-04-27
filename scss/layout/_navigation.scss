@@ -1,0 +1,30 @@
+
+#navbar {
+  background-color: #333; //TODO-change colour
+  color: $color-white;
+  // display: flex;
+  width: 100%;
+
+  ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  li {
+    padding: 0 2rem;
+  }
+
+  a {
+    border-radius: 5px;
+    padding: 1rem 2rem;
+  }
+
+  .current, 
+  li:hover  a {
+    background-color: $color-white;
+    color: $color-primary;
+  }
+}

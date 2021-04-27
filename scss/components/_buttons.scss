@@ -1,0 +1,25 @@
+.btn {
+  border-radius: 5px;
+  color: $color-white;
+
+  &-white {
+    background-color: $color-white;
+    color: $color-grey;
+  }
+
+  &-primary {
+    background-color: $color-primary;
+    // display: block;
+  }
+
+  &-group-main {
+    padding-left: 16rem;
+  }
+
+  &-animated {
+    animation: moveInBottom 3s;
+    display: inline-block;
+    margin: 2rem;
+    opacity: .8;
+  }
+}

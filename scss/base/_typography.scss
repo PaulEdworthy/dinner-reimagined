@@ -1,0 +1,46 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: $color-white;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.heading {
+
+  &-primary {
+    color: $color-primary;
+    font-size: 3rem;
+    font-weight: 300;
+
+    &-main {
+      animation: moveInLeft 3s;
+      display: block;
+      font-family: 'Italiana', 'Roboto', sans-serif;
+      font-size: 3.5rem;
+      font-weight: 700;
+      letter-spacing: 8px;
+      padding-left: 9rem;
+
+      &-top {
+        padding-top: 6rem;
+      }
+
+      &-sub {
+        padding-left: 20rem;
+      }
+    }
+  }
+
+  &-secondary {
+    color: $color-grey-dark;
+    font-size: 2.5rem;
+    display: block;
+  }
+}
+

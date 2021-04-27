@@ -1,7 +1,196 @@
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(150px);
+  }
+  100% {
+    opacity: 0.8;
+    transform: translateY(0);
+  }
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: #f8f8ff;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.heading-primary {
+  color: #ec1a1a;
+  font-size: 3rem;
+  font-weight: 300;
+}
+.heading-primary-main {
+  animation: moveInLeft 3s;
+  display: block;
+  font-family: "Italiana", "Roboto", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  letter-spacing: 8px;
+  padding-left: 9rem;
+}
+.heading-primary-main-top {
+  padding-top: 6rem;
+}
+.heading-primary-main-sub {
+  padding-left: 20rem;
+}
+.heading-secondary {
+  color: #333;
+  font-size: 2.5rem;
+  display: block;
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-text-uppercase {
+  text-transform: uppercase;
+}
+
+.u-margin-large {
+  padding: 5rem;
+}
+
+.u-margin-medium {
+  padding: 3rem;
+}
+
+.u-margin-small {
+  padding: 1rem;
+}
+
+.u-padding-large {
+  padding: 5rem;
+}
+
+.u-padding-medium {
+  padding: 3rem;
+}
+
+.u-padding-small {
+  padding: 1rem;
+}
+
+.btn {
+  border-radius: 5px;
+  color: #fff;
+}
+.btn-white {
+  background-color: #fff;
+  color: #666;
+}
+.btn-primary {
+  background-color: #ec1a1a;
+}
+.btn-group-main {
+  padding-left: 16rem;
+}
+.btn-animated {
+  animation: moveInBottom 3s;
+  display: inline-block;
+  margin: 2rem;
+  opacity: 0.8;
+}
+
+#recipe {
+  background-color: #fff;
+  box-shadow: 2px 2px 6px 2px #999;
+  height: 60vh;
+  margin: 5rem auto;
+  width: 90%;
+}
+
+#home {
+  background: url(/dist/img/recipe_website.png) no-repeat center center/cover;
+  opacity: 0.7;
+  height: 100vh;
+}
+#home h1 {
+  color: #fff;
+}
+
+#navbar {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+}
+#navbar ul {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 2rem;
+  width: 100%;
+}
+#navbar li {
+  padding: 0 2rem;
+}
+#navbar a {
+  border-radius: 5px;
+  padding: 1rem 2rem;
+}
+#navbar .current,
+#navbar li:hover a {
+  background-color: #fff;
+  color: #ec1a1a;
+}
+
+#recipe {
+  display: flex;
+}
+#recipe .panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#recipe .panel img {
+  flex: 1;
+  max-height: 100%;
+  object-fit: contain;
+  width: auto;
+}
+#recipe .panel .description {
+  flex: 1;
+  height: auto;
+  margin: auto;
+  max-width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
