@@ -76,6 +76,11 @@ ul {
   font-size: 2.5rem;
   display: block;
 }
+.heading-tertiary {
+  color: #333;
+  font-size: 1.5rem;
+  padding-top: 3rem;
+}
 
 .u-text-center {
   text-align: center;
@@ -107,6 +112,10 @@ ul {
 
 .u-padding-small {
   padding: 1rem;
+}
+
+.u-border-bottom-small {
+  border-bottom: 1px solid #333;
 }
 
 .btn {
@@ -176,29 +185,48 @@ ul {
 }
 
 #recipe {
-  display: flex;
-  flex-direction: column;
   margin: 0 2rem;
 }
 #recipe .panel {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   width: 100%;
 }
-#recipe .panel img {
+#recipe .panel .img {
   flex: 1;
-  max-height: 100%;
-  object-fit: contain;
-  position: relative;
-  max-width: auto;
+}
+#recipe .panel .img img {
+  height: 100%;
+  max-width: 100%;
 }
 #recipe .panel .description {
   flex: 1;
   max-height: 100%;
-  margin: auto auto auto -2rem;
-  padding: 0 1.5rem;
-  max-width: auto;
+  margin: auto 0;
+  width: auto;
+}
+
+#recipe-individual {
+  background-color: #f8f8ff;
+  border: 3px solid #333;
+  margin: 3rem 8rem;
+  padding: 0 8rem;
+}
+#recipe-individual .recipe-description {
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+.recipe-preparation {
+  padding-bottom: 3rem;
+}
+
+.ingredient-list {
+  padding-top: 1rem;
+}
+
+.recipe-directions {
+  padding-bottom: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */
