@@ -87,6 +87,13 @@ ul {
   padding-top: 3rem;
 }
 
+#menu .grid {
+  font-size: 2rem;
+}
+#menu .grid .day {
+  color: #ec1a1a;
+}
+
 .u-text-center {
   text-align: center;
 }
@@ -199,6 +206,24 @@ footer .terms-conditions ul li {
   padding: 1rem 2rem;
 }
 
+#menu {
+  margin: 5rem 12rem;
+}
+#menu .grid {
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 33.334% 66.666%;
+  padding: 3rem;
+}
+#menu .grid p {
+  padding: 0.5rem;
+}
+#menu .grid p:not(:last-child) {
+  border-bottom: 1px solid #666;
+}
+
 #home {
   background: url(/dist/img/recipe_website.png) no-repeat center center/cover;
   opacity: 0.7;
@@ -232,6 +257,10 @@ footer .terms-conditions ul li {
 #navbar li:hover a {
   background-color: #ec1a1a;
   color: #fff;
+}
+
+#menu {
+  background-color: #f8f8ff;
 }
 
 #recipe {

@@ -56,3 +56,12 @@ ul {
   }
 }
 
+#menu {
+  & .grid {
+    font-size: 2rem;
+
+    & .day {
+      color: $color-primary;
+    }
+  }
+}
