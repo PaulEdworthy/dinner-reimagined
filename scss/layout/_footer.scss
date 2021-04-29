@@ -1,0 +1,53 @@
+footer {
+  background-color: $color-grey-dark;
+
+  & .social-icons {
+    color: $color-white-grey;
+    margin-bottom: 1rem;
+
+    & a {
+      border: 1px solid $color-white-grey;
+      border-radius: 10px;
+      padding: 1rem;
+      margin: 1rem;
+      transition: all .3s;
+
+      &:hover {
+        background-color: $color-primary;
+        border: 1px solid $color-grey-dark;
+      }
+
+      // &:active {
+      //   transform: translateY(2px);
+      // }
+    }
+
+    & .icon-padding {
+      padding-left: 1rem;
+    }
+  }
+
+  & .logo {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 2rem 0 1rem 0;
+
+    & img {
+      margin: 0 2rem;
+      width: 50px;
+    }
+  }
+
+  & .terms-conditions {
+    & ul {
+      color: $color-white-grey;
+      display: flex;
+      justify-content: center;
+
+      & li {
+        padding: 1rem 2rem;
+      }
+    }
+  }
+}

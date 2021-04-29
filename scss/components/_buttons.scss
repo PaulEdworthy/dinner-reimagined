@@ -9,7 +9,6 @@
 
   &-primary {
     background-color: $color-primary;
-    // display: block;
   }
 
   &-group-main {
@@ -21,5 +20,12 @@
     display: inline-block;
     margin: 2rem;
     opacity: .8;
+    transition: all .2s;
+
+    &:hover {
+      box-shadow: 0 10px 20px rgba($color-black, .15);
+      // color: $color-grey-dark;
+      // opacity: 1;
+    }
   }
 }
